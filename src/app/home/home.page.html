@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      JSW - QR Code
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <img src="/assets/scan.jpeg" alt="" />
+    <ion-card-header>
+      <ion-card-subtitle>Get Started</ion-card-subtitle>
+      <ion-card-title>Read the user manual</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Scan QR to open user manual in a web page.</p>
+    </ion-card-content>
+    <ion-button expand='block' margin (click)="goToQrScan()">Click to scan a QR Code</ion-button>
+  </ion-card>
+
+  <!--ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Generate QR</ion-card-subtitle>
+      <ion-card-title>Enter Value to Create QR code</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-input type="text" [(ngModel)]="encodedData"></ion-input>
+      <ion-button (click)="goToCreateCode()">
+        Create QR
+      </ion-button>
+    </ion-card-content>
+  </ion-card-->
+</ion-content>
